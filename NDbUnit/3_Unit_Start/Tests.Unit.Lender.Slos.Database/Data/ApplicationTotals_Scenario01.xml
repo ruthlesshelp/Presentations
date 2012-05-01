@@ -1,0 +1,54 @@
+<?xml version="1.0" standalone="yes"?>
+<Lender xmlns="http://tempuri.org/Lender.xsd">
+  <Individual>
+    <Id>1</Id>
+    <LastName>Roosevelt</LastName>
+    <FirstName>Theodore</FirstName>
+    <MiddleName />
+    <Suffix />
+    <DateOfBirth>1858-10-27</DateOfBirth>
+  </Individual>
+  <Individual>
+    <Id>3</Id>
+    <LastName>Smith</LastName>
+    <FirstName>John</FirstName>
+    <MiddleName>Q</MiddleName>
+    <Suffix>Sr.</Suffix>
+    <DateOfBirth>2011-01-01</DateOfBirth>
+  </Individual>
+  <Individual>
+    <Id>5</Id>
+    <LastName>Truman</LastName>
+    <FirstName>Harry</FirstName>
+    <MiddleName>S</MiddleName>
+    <Suffix />
+    <DateOfBirth>1884-05-08</DateOfBirth>
+  </Individual>
+  <Application>
+    <Id>11</Id>
+    <StudentId>1003</StudentId>
+    <Principal>107988.00</Principal>
+    <AnnualPercentageRate>6.4532</AnnualPercentageRate>
+    <TotalPayments>331</TotalPayments>
+  </Application>
+  <Application>
+    <Id>13</Id>
+    <StudentId>3</StudentId>
+    <Principal>283573.00</Principal>
+    <AnnualPercentageRate>2.3249</AnnualPercentageRate>
+    <TotalPayments>125</TotalPayments>
+  </Application>
+  <Application>
+    <Id>17</Id>
+    <StudentId>3</StudentId>
+    <Principal>19464.00</Principal>
+    <AnnualPercentageRate>5.4459</AnnualPercentageRate>
+    <TotalPayments>207</TotalPayments>
+  </Application>
+  <Student>
+    <Id>3</Id>
+    <HighSchoolName>Dominion High School</HighSchoolName>
+    <HighSchoolCity>Sterling</HighSchoolCity>
+    <HighSchoolState>VA</HighSchoolState>
+  </Student>
+</Lender>

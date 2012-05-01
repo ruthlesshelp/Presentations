@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<Lender xmlns="http://tempuri.org/Lender.xsd">
+  <Individual>
+    <Id>1001</Id>
+    <LastName>McMahon</LastName>
+    <FirstName>Beulah</FirstName>
+    <MiddleName>Eloise</MiddleName>
+    <Suffix />
+    <DateOfBirth>1995-10-17T00:00:00-04:00</DateOfBirth>
+  </Individual>
+  <Individual>
+    <Id>1003</Id>
+    <LastName>Cochran</LastName>
+    <FirstName>Edmund</FirstName>
+    <MiddleName>Marlene</MiddleName>
+    <Suffix />
+    <DateOfBirth>1993-05-05T00:00:00-04:00</DateOfBirth>
+  </Individual>
+  <Individual>
+    <Id>1005</Id>
+    <LastName>Mann</LastName>
+    <FirstName>Naomi</FirstName>
+    <MiddleName>Arturo</MiddleName>
+    <Suffix />
+    <DateOfBirth>1995-12-10T00:00:00-05:00</DateOfBirth>
+  </Individual>
+  <Individual>
+    <Id>1007</Id>
+    <LastName>Oneil</LastName>
+    <FirstName>Isabel</FirstName>
+    <MiddleName>Sidney</MiddleName>
+    <Suffix />
+    <DateOfBirth>1995-07-25T00:00:00-04:00</DateOfBirth>
+  </Individual>
+</Lender>
