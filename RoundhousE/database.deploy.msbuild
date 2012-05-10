@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Project DefaultTargets="DatabaseDeploy"
+         xmlns="http://schemas.microsoft.com/developer/msbuild/2003"
+         >
+  <!-- Visit http://roundhouse.googlecode.com/ for details -->
+
+  <PropertyGroup>
+    <BuildPath>.</BuildPath>
+  </PropertyGroup>
+
+  <UsingTask AssemblyFile="$(BuildPath)\RoundhousE\MSBuild\roundhouse.tasks.dll"
+             TaskName="roundhouse.tasks.Roundhouse"
+             />
+
+  <PropertyGroup>
+    <Environment Condition="$(Environment) == ''">local</Environment>
+    <SourceRoot Condition="$(SourceRoot) == ''">.\database</SourceRoot>
+
+    <!-- The 'local' environment -->
+    <EnvironmentName Condition="$(Environment) == 'local'">LOCAL</EnvironmentName>
+    <DBServer Condition="$(Environment) == 'local' AND $(DBServer) == ''">(local)\SQLExpress</DBServer>
+    <DBName Condition="$(Environment) == 'local' AND $(DBName) == ''">Lender.Slos</DBName>
+    <DBCredentials Condition="$(Environment) == 'local' AND $(DBCredentials) == ''">Integrated Security=true</DBCredentials>
+
+  </PropertyGroup>
+
+
+  <Target Name="ApplyDatabaseChanges">
+    <PropertyGroup>
+      <DBConnectionString Condition="$(DBConnectionString) == ''">Data Source=$(DBServer);Initial Catalog=$(DBName);$(DBCredentials);</DBConnectionString>
+      <DBSqlFilesPath>$(SourceRoot)</DBSqlFilesPath>
+      <RepositoryPath Condition="$(RepositoryPath) == ''">https://github.com/ruthlesshelp/Presentations</RepositoryPath>
+      <VersionFile>sql</VersionFile>
+      <RoundhouseSilent Condition="$(RoundhouseSilent) == ''">True</RoundhouseSilent>
+    </PropertyGroup>
+
+    <Message Text="Running RoundhousE on [$(DBServer)].[$(DBName)] database."
+             Importance="high"
+             />
+
+    <Message Text="Looking in folder '$(DBSqlFilesPath)' for sql scripts."
+             Importance="high"
+             />
+
+    <Roundhouse ConnectionString="$(DBConnectionString)"
+                SqlFilesDirectory="$(DBSqlFilesPath)"
+                RepositoryPath="$(RepositoryPath)"
+                VersionFile="$(VersionFile)"
+                Silent="$(RoundhouseSilent)"
+                SchemaName="rh"
+                EnvironmentName="$(EnvironmentName)"
+                WarnOnOneTimeScriptChanges="true"
+                />
+  </Target>
+
+  <Target Name="DatabaseDeploy"
+          DependsOnTargets="ApplyDatabaseChanges"
+          />
+</Project>
