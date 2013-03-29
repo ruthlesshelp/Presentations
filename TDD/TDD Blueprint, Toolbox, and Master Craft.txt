@@ -1,0 +1,37 @@
+Presentation Title or Topic
+Test Driven Development: Blueprint, Toolbox, and Master Craft
+Event Name
+Fairfield / Westchester User Groups April meeting
+Sponsoring Organization
+unknown
+Center of Excellence
+Microsoft
+Event Date
+4/1/2013
+Presenter
+Stephen Ritchie
+Opportunity Source
+Invited to speak
+Presentation location
+TBD
+Event Link
+Fairfield / Westchester User Groups
+
+Test Driven Development: Blueprint, Toolbox, and Master Craft
+
+Many say that the practice of test driven development (TDD) has the ability to transform software engineering. Let’s break it down from a skeptical pragmatist’s viewpoint. This presentation focuses on three key ideas; the blueprint, the toolbox, and the master craft. Let’s look at TDD as a blueprint for writing code and discuss the implications and benefit. Let’s go beyond the theoretical application of TDD and focus on the toolbox, with examples of what developers need to know to get going. Finally, TDD is a master craft of Agile engineering. To be effective with TDD, let’s look at the progression of skills needed to achieve the promised results of TDD and to maximize its value.
+
+Stephen is the organizer of DC Alt.Net (http://bit.ly/ZRDxUj). He frequent speaker and trainer on many .NET topics, including automated testing, continuous integration, code analysis, and .NET best practices.Stephen is the author of the book "Pro .NET Best Practices" (http://amzn.to/v8TD8E).
+
+
+TDD video
+http://www.youtube.com/watch?v=uGaNkTahrIw
+
+
+
+Ensures quality -- focus on requirements before writing the code
+Keeps code clear, simple and testable -- small achievable steps
+Provides documentation for different team members -- and new team members
+Repeatable tests -- regression tests
+Enables rapid change -- 
+

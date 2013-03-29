@@ -1,0 +1,32 @@
+Feature: Convert Celsius To Fahrenheit
+  In order to convert the temperature from Celsius to Fahrenheit
+  Users should be able to 
+  provide the temperature in degrees Celsius and get the temperature in degrees Fahrenheit
+
+  Scenario: Freezing point of water
+    Given the temperature in degrees Celsius
+    When I pass value of 0
+    Then I should be returned a value of 32 degrees Fahrenheit
+
+  Scenario: Boiling point of water
+    Given the temperature in degrees Celsius
+    When I pass value of 100
+    Then I should be returned a value of 212 degrees Fahrenheit
+
+  Scenario: Identity temperature
+    Given the temperature in degrees Celsius
+    When I pass value of -40
+    Then I should be returned a value of -40 degrees Fahrenheit
+
+  Scenario: Prime example 5
+    Given the temperature in degrees Celsius
+    When I pass value of 5
+    Then I should be returned a value of 41 degrees Fahrenheit
+
+  Scenario: Rounding example 18.71
+    Given the temperature in degrees Celsius
+    When I pass value of 18.71
+    Then I should be returned a value of 65.68 degrees Fahrenheit
+
+Formula
+°F = °C  x  9/5 + 32

@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kata.Physics.Temperature", "Kata.Physics.Temperature\Kata.Physics.Temperature.csproj", "{65C92B71-985A-495E-B16D-5EC9EAC0ED6D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{9AE73353-AB07-483C-9310-B376F0904160}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit", "Unit", "{53C9820D-B9B1-4D87-BA30-71C498652AD2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.Unit.Kata.Physics.Temperature", "Tests.Unit.Kata.Physics.Temperature\Tests.Unit.Kata.Physics.Temperature.csproj", "{9631285C-C09F-4190-968A-7D473EA3B093}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{65C92B71-985A-495E-B16D-5EC9EAC0ED6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65C92B71-985A-495E-B16D-5EC9EAC0ED6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65C92B71-985A-495E-B16D-5EC9EAC0ED6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65C92B71-985A-495E-B16D-5EC9EAC0ED6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9631285C-C09F-4190-968A-7D473EA3B093}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9631285C-C09F-4190-968A-7D473EA3B093}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9631285C-C09F-4190-968A-7D473EA3B093}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9631285C-C09F-4190-968A-7D473EA3B093}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{53C9820D-B9B1-4D87-BA30-71C498652AD2} = {9AE73353-AB07-483C-9310-B376F0904160}
+		{9631285C-C09F-4190-968A-7D473EA3B093} = {53C9820D-B9B1-4D87-BA30-71C498652AD2}
+	EndGlobalSection
+EndGlobal
